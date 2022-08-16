@@ -9,7 +9,7 @@ router.get('/', function(req, res) {
 });
 
 router.get('/home', function(req, res, next) {
-  res.sendFile('index.ejs', { root: __dirname });
+  res.sendFile('index', {title: 'Express' });
 });
 
 router.get('/about', function(req, res, next) {
