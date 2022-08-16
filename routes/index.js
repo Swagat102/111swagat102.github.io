@@ -8,8 +8,11 @@ router.get('/', function(req, res) {
   res.sendFile('index.html', { root: '.' });
 });
 
-router.get('/home', function(req, res, next) {
+/*router.get('/home', function(req, res, next) {
   res.sendFile('index', {title: 'Express' });
+});*/
+router.get('/home', function(req, res) {
+  res.sendFile('home.html', { root: '.' });
 });
 
 router.get('/about', function(req, res, next) {
