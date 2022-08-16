@@ -1,21 +1,27 @@
-#header{
-    width: 100%;
-    height: 15vh;
-}
-#contact{
-    height: 85vh;
+#contactUs{
+    height: 100%;
     width: 100%;
     background-image: url('/images/contact.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
-    /* background-image: linear-gradient(to bottom,transparent,black); */
+}
+#contact{
+    overflow: hidden;
+    height: 85vh;
+    width: 100%;
+   /* background-image: url('/images/contact.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    background-image: linear-gradient(to bottom,transparent,black); */
 }
 
 #contactOverlay{
     height: 100%;
     width: 100%;
-    background: linear-gradient(to bottom,#020405,#010102f6,#030405ea,#050708f8,#070a0cd0);
+    /*background: linear-gradient(to bottom,#020405,#010102f6,#030405ea,#050708f8,#070a0cd0);*/
+    background: linear-gradient(45deg, black, transparent);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,7 +45,7 @@
     font-weight: 600;
 }
 
-input[type="text"],[type="email"],[type="number"]{
+input[type="text"],[type="email"],[type="tel"],[type="date"]{
     display: block;
     width: 100%;
     height: 40px;
@@ -52,19 +58,30 @@ input[type="text"],[type="email"],[type="number"]{
 
 }
 input[type="submit"]{
+    -webkit-transition: ease-out 0.6s;
+    -moz-transition: ease-out 0.6s;
+    transition: ease-out 0.6s;
     height: 50px;
     width: 100%;
-  background-color: transparent;
-  border: solid 1px;
-  border-image-slice: 8;
-border-width: 3px;
-color: white;
-margin: 30px 0;
-
-letter-spacing: 4px;
-
-border-image-source: linear-gradient(to left, #c832db, #ec3a3a);
+    background-color: transparent;
+    border: solid 1px;
+    border-image-slice: 8;
+    border-width: 3px;
+    color: white;
+    margin: 30px 0;
+    letter-spacing: 4px;
+    box-shadow: inset 0 0 0 0 #5575A5;
+    /*border-image-source: linear-gradient(to left, #051e3e , #251e3e);*/
+   
 }
+input[type="submit"]:hover{
+    /*box-shadow: 0px 0px 20px 30px #251e3e;*/
+    transition: linear 0.3s;
+    /*background: linear-gradient(to right, #051e3e, #251e3e);*/
+    box-shadow: inset 450px 0 0 0 #25274D;
+    font-weight: 500;
+    cursor: pointer;
+    }
 small{
     color: grey;
     margin-left: 15px;
@@ -73,14 +90,20 @@ small{
     color: rgba(255, 255, 255, 0.562);
     font-size: 14px;
 }
-
-input[type="submit"]:hover{
-border-image-source: linear-gradient(to right, #c832db, #ec3a3a);
-font-weight: 500;
-cursor: pointer;
-}
 .end{
     text-align: center;
     color: white;
     font-size: 20px;
+  }
+
+  #header-booked{
+    width: 100%;
+    height: 100%;
+    /* background-color: #f1f1f1; */
+    background-image: url('/images/contact.jpg');
+    background-position: center ;
+    /* background-position-y: 20px; */
+    /* background-size: 130%; */
+    background-size: cover;
+    background-repeat: no-repeat;
   }

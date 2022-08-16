@@ -1,3 +1,14 @@
+#header{
+    width: 100%;
+    height: 60vh;
+    background-image: url('/images/GalleryBG.png');
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+    /* background-color: yellow; */
+}
+
 #gallery{
     width: 100%;
     min-height: 80vh;
@@ -6,33 +17,58 @@
     padding: 3% 8%;
     justify-content: space-between;
 }
-.card{
+.cards{
+ margin-bottom: 30px;
+}
+.cards-p{
     width: 400px;
-    min-height: 350px;
-    background-color: yellow;
-    margin: 30px 0;
-    background-image: url('/images/singer.jpg');
-    background-position: center;
-    background-size: cover;
+    font-size: 20px;
+    margin-top: 20px;
+    color: #5D5C61;
 }
 
-.card:nth-child(1){
-    background-image: url('/images/1.jpg');
+.image-box {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    width: 400px;
+    height: 350px;
 }
-.card:nth-child(2){
-    background-image: url('/images/2.jpg');
+
+.card{
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s;
+    display: block;
+    transform: scale(1);
+    margin: 30px 0 0;
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(100%);
 }
-.card:nth-child(3){
-    background-image: url('/images/3.jpg');
+.card:hover{
+    filter: none;
+    max-height: 350px;
+    transform: scale(1.1);
 }
-.card:nth-child(4){
-    background-image: url('/images/4.jpg');
+
+.card1{
+    background-image: url('/images/tukuwebsiteimg1.png');
 }
-.card:nth-child(5){
-    background-image: url('/images/5.jpg');
+.card2{
+    background-image: url('/images/tukuwebsiteimg2.png');
 }
-.card:nth-child(6){
-    background-image: url('/images/6.jpg');
+.card3{
+    background-image: url('/images/tukuwebsiteimg3.png');
+}
+.card4{
+    background-image: url('/images/tukuwebsiteimg4.jpg');
+}
+.card5{
+    background-image: url('/images/tukuwebsiteimg5.jpg');
+}
+.card6{
+    background-image: url('/images/tukuwebsite img6.jpg');
 }
 footer{
     height: 20vh;
