@@ -10,10 +10,10 @@ router.get('', function(req, res) {
 
 /*router.get('/home', function(req, res, next) {
   res.sendFile('index', {title: 'Express' });
-});
-router.get('/home', function(req, res) {
-  res.sendFile('home.html', { root: '.' });
 });*/
+router.get('/home', function(req, res, next) {
+  res.render('home', {title: 'Express' });
+});
 
 router.get('/about', function(req, res, next) {
   res.render('about', { title: 'Express' });
