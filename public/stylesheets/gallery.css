@@ -9,7 +9,7 @@
     /* background-color: yellow; */
 }*/
 
-#gallery{
+.gallery{
     width: 100%;
     min-height: 80vh;
     display: flex;
