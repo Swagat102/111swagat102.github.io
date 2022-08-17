@@ -9,7 +9,7 @@ router.get('/', function(req, res) {
 });
 
 router.get('/home', function(req, res) {
-  res.sendFile('index.ejs',  { root: __dirname } );
+  res.sendFile('index.html',  { root: '.' });
 });
 
 /*router.get('/home', function(req, res, next) {
