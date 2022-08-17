@@ -8,12 +8,13 @@ router.get('/', function(req, res) {
   res.sendFile('index.html', { root: '.' });
 });
 
-/*router.get('/home', function(req, res, next) {
-  res.sendFile('index', {title: 'Express' });
-});*/
-router.get('/home', function(req, res, next) {
-  res.render('home', {title: 'Express' });
+router.get('/home', function(req, res) {
+  res.sendFile('index.ejs',  { root: __dirname } );
 });
+
+/*router.get('/home', function(req, res, next) {
+  res.render('home', {title: 'Express' });
+});*/
 
 router.get('/about', function(req, res, next) {
   res.render('about', { title: 'Express' });
