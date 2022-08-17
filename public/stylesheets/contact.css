@@ -1,11 +1,11 @@
-#contactUs{
+/*#contactUs{
     height: 100%;
     width: 100%;
     background-image: url('/images/contact.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
-}
+}*/
 #contact{
     overflow: hidden;
     height: 85vh;
